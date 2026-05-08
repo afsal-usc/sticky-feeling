@@ -65,6 +65,8 @@ img {
 }
 
 .brand-mark {
+  justify-self: center;
+  margin-inline: auto;
   width: clamp(17.75rem, 42vw, 43rem);
 }
 
@@ -115,14 +117,7 @@ img {
   }
 
   .dot-strip {
-    inset: max(0.65rem, env(safe-area-inset-top, 0px)) 0 auto;
-    height: var(--dot-size);
-    background-image: radial-gradient(
-      circle at calc(var(--dot-size) * 0.52) calc(var(--dot-size) * 0.5),
-      var(--dot-yellow) 0 calc(var(--dot-size) * 0.5),
-      transparent calc(var(--dot-size) * 0.52)
-    );
-    background-size: var(--dot-gap) var(--dot-size);
+    display: none;
   }
 
   .hero__content {
@@ -132,6 +127,7 @@ img {
 
   .brand-mark {
     width: min(82vw, 21rem);
+    transform: none;
   }
 
   .coming-soon {
