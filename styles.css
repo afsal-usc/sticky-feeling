@@ -54,7 +54,7 @@ img {
   width: min(100%, 48rem);
   display: grid;
   justify-items: center;
-  gap: clamp(1.05rem, 1.55vw, 1.55rem);
+  gap: clamp(1.5rem, 2.3vw, 2.35rem);
   transform: translateY(clamp(0.4rem, 4.2vh, 2.8rem));
 }
 
@@ -65,11 +65,43 @@ img {
 }
 
 .brand-mark {
-  width: clamp(21rem, 49.5vw, 51.25rem);
+  width: clamp(17.75rem, 42vw, 43rem);
 }
 
 .coming-soon {
-  width: clamp(13rem, 20.5vw, 21rem);
+  width: clamp(8.5rem, 13.25vw, 13.5rem);
+  transform: translateY(-2px);
+}
+
+.instagram-link {
+  position: absolute;
+  left: 50%;
+  bottom: max(1.75rem, env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ink-brown);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  text-decoration: none;
+  opacity: 0.9;
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
+}
+
+.instagram-link:hover {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-1px);
+}
+
+.instagram-link__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 auto;
 }
 
 @media (max-width: 640px) {
@@ -82,16 +114,38 @@ img {
     padding-inline: 1.25rem;
   }
 
+  .dot-strip {
+    inset: max(0.65rem, env(safe-area-inset-top, 0px)) 0 auto;
+    height: var(--dot-size);
+    background-image: radial-gradient(
+      circle at calc(var(--dot-size) * 0.52) calc(var(--dot-size) * 0.5),
+      var(--dot-yellow) 0 calc(var(--dot-size) * 0.5),
+      transparent calc(var(--dot-size) * 0.52)
+    );
+    background-size: var(--dot-gap) var(--dot-size);
+  }
+
   .hero__content {
-    gap: clamp(0.85rem, 4vw, 1.2rem);
+    gap: clamp(1.25rem, 4.5vw, 1.55rem);
     transform: translateY(2vh);
   }
 
   .brand-mark {
-    width: min(88vw, 23rem);
+    width: min(74vw, 19rem);
+    transform: translateX(-2.5rem);
   }
 
   .coming-soon {
-    width: min(56vw, 13rem);
+    width: min(42vw, 10.5rem);
+  }
+
+  .instagram-link {
+    bottom: max(6rem, calc(env(safe-area-inset-bottom, 0px) + 4.5rem));
+    font-size: 0.78rem;
+  }
+
+  .instagram-link__icon {
+    width: 1.18rem;
+    height: 1.18rem;
   }
 }
