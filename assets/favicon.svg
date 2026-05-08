@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sticky Feelings">
+  <rect width="64" height="64" fill="#fbf169"/>
+  <circle cx="51" cy="13" r="7" fill="#c7b931"/>
+  <path fill="#593635" d="M15 19h19v8H23v5h10v13H15v-8h10v-5H15z"/>
+  <path fill="#593635" d="M38 19h16v8h-8v5h7v8h-7v9h-8z"/>
+</svg>
