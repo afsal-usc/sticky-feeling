@@ -131,12 +131,11 @@ img {
   }
 
   .brand-mark {
-    width: min(74vw, 19rem);
-    transform: translateX(-2.5rem);
+    width: min(82vw, 21rem);
   }
 
   .coming-soon {
-    width: min(42vw, 10.5rem);
+    width: min(44vw, 11rem);
   }
 
   .instagram-link {
